@@ -1,0 +1,17 @@
+.card-body {
+  background-color: aquamarine;
+  color: black;
+}
+
+.img {
+  background-color: aqua;
+}
+
+.footer {
+  background-color: antiquewhite;
+  color: brown;
+}
+
+.carousel-inner > .carousel-item {
+  height: 81vh;
+}
