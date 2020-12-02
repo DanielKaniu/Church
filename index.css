@@ -65,3 +65,11 @@ body {
   text-align: center;
   background-color: antiquewhite;
 }
+
+/*
+Style testimonials */
+.testimonials {
+  background: url("images/me.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
