@@ -6,13 +6,13 @@ body {
 }
 
 /*
-Style the navbar to be on top of the background video*/
+  Style the navbar to be on top of the background video*/
 .navbar {
   z-index: 1;
 }
 
 /*
-Style the container housing the background video and the text*/
+  Style the container housing the background video and the text*/
 .banner {
   width: 100%;
   height: 90vh;
@@ -21,7 +21,7 @@ Style the container housing the background video and the text*/
   align-items: center;
 }
 /*
-Style the video*/
+  Style the video*/
 .banner video {
   position: absolute;
   top: 0%;
@@ -37,7 +37,7 @@ Style the video*/
   margin-left: 0;
 }
 /*
-Style the heading which is over the background video*/
+  Style the heading which is over the background video*/
 .banner .content h1 {
   margin: 0%;
   padding: 0%;
@@ -46,21 +46,21 @@ Style the heading which is over the background video*/
   color: white;
 }
 /*
-Style the heading which is over the background video*/
+  Style the heading which is over the background video*/
 .banner .content p {
   font-size: 1.5em;
   color: white;
 }
 
 /*
-Style the ministers' cards*/
+  Style the ministers' cards*/
 .card-body {
   background-color: lightpink;
   color: black;
 }
 
 /*
-Style the daily Bible verse part */
+  Style the daily Bible verse part */
 #daily-verse {
   text-align: center;
   background-color: antiquewhite;
