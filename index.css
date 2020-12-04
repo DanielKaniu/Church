@@ -69,6 +69,9 @@ body {
 /*
 Style testimonials */
 .testimonials {
+  color: rgb(34, 183, 241);
+  font-weight: bolder;
+  height: 40vh;
   background: url("images/me.jpg");
   background-attachment: fixed;
   background-size: cover;
