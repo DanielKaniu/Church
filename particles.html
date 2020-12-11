@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html id="particles-js">
     <head>
+        <title>
+            1st Bootstrap
+        </title>
         <!-- 
         Required meta tags -->
         <meta charset="utf-8">
@@ -12,7 +15,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <!--
         Linking with local css -->
-        <link rel = "stylesheet" href = "index.css">
+        <!-- <link rel = "stylesheet" href = "index.css"> -->
         <!--
         Css + sass file to bring in the holiday (xmas) spirit to the website. -->
         <link rel="stylesheet" href="xmas_lights.css">
@@ -21,47 +24,6 @@
         <link rel="stylesheet" href="particles.css">
         <!-- 
         <script src="index.js"> </script> -->
-
-        <title>
-            1st Bootstrap
-        </title>
-    </head>
-    <body>
-        <div id="particles-js">
-            <header>
-                <nav class="navbar fixed-top navbar-expand-md navbar-dark scrolling-navbar">
-                    <a class="navbar-brand" href="#"><strong>Messengers</strong></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Sticky-nav">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="#Sticky-nav">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link active">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Groups</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">About Us</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-                <div class='view'>
-                    <div class="flex-center">
-                        <a href="#scroll" class="btn btn-primary">Scroll Down</a>
-                    </div>
-                </div>
-            </header>
-            <div>
-                <h4>
-                    MESSENGERS OF REDEMPTION
-                </h4>
-            </div>
-        </div>
-        
-        
         <!-- 
         Bootstrap jquery library-->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -80,10 +42,104 @@
 
         <!-- Initialize Firebase -->
         <script src="/__/firebase/init.js"></script>
-
         <!--
         Particles js  -->
         <script type = 'text/javascript' src="particles.js"></script>
         <script type = 'text/javascript' src="app.js"></script>
+    </head>
+    <body id="particles-js">
+            <header></header>
+                <!--
+                Navbar -->
+                <nav class="navbar fixed-top navbar-expand-lg">
+                    <!-- 
+                    Image logo and church title -->
+                    <nav class="navbar navbar-light">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/Rev-big.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+                        Messengers of Redemption
+                    </a>
+                    </nav>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!--
+                    Navigation list  -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                        <a class="nav-link text-light" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Location</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Groups
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item text-dark" href="#">Men</a>
+                            <a class="dropdown-item text-dark" href="#">Women</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-dark" href="#">Youth</a>
+                        </div>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                    </div>
+                </nav>
+            </header>
+            <div>
+            <main class="brand">
+                <span id="m"> M </span><span id="e"> E </span><span id="s"> S </span><span id="s2"> S </span>
+                <span id="e2"> E </span><span id="n"> N </span><span id="g"> G </span><span id="e3"> E </span>
+                <span id="r"> R </span><span id="s3"> S </span>|<span id="o"> O </span><span id="f"> F </span>|
+                <span id="r2"> R </span><span id="e4"> E </span><span id="d"> D </span><span id="e5"> E </span>
+                <span id="m2"> M </span><span id="p"> P </span><span id="t"> T </span><span id="i"> I </span>
+                <span id="o2"> O </span><span id="n2"> N </span>
+
+                <br><br>
+
+                <!--
+                Ministers' details -->
+                <div class="container">
+                    <div class='row justify-content-center'>
+                    <div class="col-sm-6 col-md-6 col-lg-3 card-space1">
+                        <div class="card">
+                        <div class="card-block">
+                            <img src="images/Rev-big.png" class="card-img-top"/>
+                            <h3 class="card-title">
+                            Reverend Isaiah Lei
+                            </h3>
+                            <div class="card-footer">
+                            <a href="https://www.facebook.com/isaiah.ilingo"><b>f</b></a>
+                            </div>
+                        </div>
+                        </div>
+                    </div> 
+                    <div class="col-sm-6 col-md-6 col-lg-3 card-space2">
+                        <div class="card">
+                        <div class="card-block">
+                            <img src="images/mum-big.png" class="card-img-top">
+                            <h3 class="card-title">
+                            Pastor Anne Lei
+                            </h3>
+                            <div class="card-footer">
+                            <a href="https://www.facebook.com/annewangari.wangari.9"><b>f</b></a>
+                            </div>
+                        </div>
+                        </div> 
+                    </div>
+                    </div>
+                </div>
+            </main>
+        </div>
     </body>
 </html>
