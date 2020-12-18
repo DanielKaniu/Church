@@ -14,6 +14,10 @@ body {
   top: 20vh;
   left: 20vh;
 }
+#table-program {
+  font-weight: bolder;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
 
 @keyframes gradient {
   0% {
@@ -136,7 +140,6 @@ Specify percentages of the animation's duration, i.e., 12.5% * 3 seconds.
   }
   4% {
     color: aliceblue;
-    font-size: ;
   }
   9% {
     color: rgb(177, 243, 22);
