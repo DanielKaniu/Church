@@ -24,7 +24,8 @@ body {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 #testimonials {
-  background-image: url("images/testimonies.jpg");
+  background-image: url("images/cross.jpg");
+  background-attachment: fixed;
 }
 
 @keyframes gradient {
