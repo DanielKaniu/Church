@@ -15,8 +15,9 @@ body {
   top: 20vh;
   left: 20vh;
 }
-.social-media {
-  color: aliceblue;
+#Bible-card {
+  background-image: url("images/yeah.jpg");
+  background-attachment: fixed;
 }
 #table-program {
   font-weight: bolder;
