@@ -10,9 +10,13 @@ body {
   text-align: center;
   font-size: xx-large;
   font-weight: 700;
+  color: darkslategrey;
   position: absolute;
   top: 20vh;
   left: 20vh;
+}
+.transparent {
+  opacity: 0.9;
 }
 #table-program {
   font-weight: bolder;
