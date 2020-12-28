@@ -15,8 +15,8 @@ body {
   top: 20vh;
   left: 20vh;
 }
-.transparent {
-  opacity: 0.9;
+.social-media {
+  color: aliceblue;
 }
 #table-program {
   font-weight: bolder;
