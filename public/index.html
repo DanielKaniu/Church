@@ -1,89 +1,290 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html id="particles-js">
+    <head>
+        <title>
+            1st Bootstrap
+        </title>
+        <!-- 
+        Required meta tags -->
+        <meta charset="utf-8">
+        <!--
+        Responsive viewport meta tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!--
+        Bootstrap css -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <!--
+        Linking with local css -->
+        <!-- <link rel = "stylesheet" href = "index.css"> -->
+        <!--
+        Css + sass file to bring in the holiday (xmas) spirit to the website. -->
+        <link rel="stylesheet" href="xmas_lights.css">
+        <!--
+        Css particles  --> 
+        <link rel="stylesheet" href="particles.css">
+        <!--
+        Javascript greetings -->
+        <!-- <script src="index.js"> </script> -->
+        <!-- 
+        Bootstrap jquery library-->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <!-- 
+        Bootstrap javascript library-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/8.2.0/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/8.2.0/firebase-auth.js"></script>
-    <script defer src="/__/firebase/8.2.0/firebase-database.js"></script>
-    <script defer src="/__/firebase/8.2.0/firebase-firestore.js"></script>
-    <script defer src="/__/firebase/8.2.0/firebase-functions.js"></script>
-    <script defer src="/__/firebase/8.2.0/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/8.2.0/firebase-storage.js"></script>
-    <script defer src="/__/firebase/8.2.0/firebase-analytics.js"></script>
-    <script defer src="/__/firebase/8.2.0/firebase-remote-config.js"></script>
-    <script defer src="/__/firebase/8.2.0/firebase-performance.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+        <!--
+        Firebase hosting tools-->
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="/__/firebase/8.0.2/firebase-app.js"></script>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="/__/firebase/8.0.2/firebase-analytics.js"></script>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        <!-- Initialize Firebase -->
+        <script src="/__/firebase/init.js"></script>
+        <!--
+        Particles js  -->
+        <script type = 'text/javascript' src="particles.js"></script>
+        <script type = 'text/javascript' src="app.js"></script>
+    </head>
+    <body>
+        <div>
+            <!--
+            Navbar -->
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+                <!-- 
+                Image logo and church title -->
+                <nav class="navbar navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">
+                    <img src="/images/Rev-big.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+                    Messengers of Redemption
+                </a>
+                </nav>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+                <!--
+                Navigation list  -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                    <a class="nav-link text-light" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Live</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="location.html">Location</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Groups
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item text-dark" href="#">Men</a>
+                        <a class="dropdown-item text-dark" href="#">Women</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item text-dark" href="#">Youth</a>
+                    </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                </div>
+            </nav>
+        </div>
+        <div class="brand">
+
+            <span id="m"> M </span><span id="e"> e </span><span id="s"> s </span><span id="s2"> s </span>
+            <span id="e2"> e </span><span id="n"> n </span><span id="g"> g </span><span id="e3"> e </span>
+            <span id="r"> r </span><span id="s3"> s </span>|<span id="o"> o </span><span id="f"> f </span>|
+            <span id="r2"> R </span><span id="e4"> e </span><span id="d"> d </span><span id="e5"> e </span>
+            <span id="m2"> m </span><span id="p"> p </span><span id="t"> t </span><span id="i"> i </span>
+            <span id="o2"> o </span><span id="n2"> n </span>
+
+            <br><br>
+
+            <!--
+            Background video. Will also include CSS3, so watch out for the classes. -->
+            <div>
+                <video autoplay muted loop width="50%" style="border-radius: 20%;">
+                <source src="/videos/new.mp4" type="video/mp4">
+                </video>
+            </div>
+
+        </div>
+
+            <br>
+
+        <div>
+            <!--
+            Xmas lights :-)  -->
+            <ul class="lightrope">
+                <li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+                <li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+                <li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+                <li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+                <li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+                <li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+            </ul>
+
+            <br>
+            
+            <!--
+            Ministers' details -->
+            <div class="container">
+                <div class='row justify-content-center'>
+                <div class="col-sm-6 col-md-6 col-lg-3 card-space1">
+                    <div class="card">
+                    <div class="card-block">
+                        <img src="/images/Rev.png" class="card-img-top"/>
+                        <h3 class="card-title">
+                        Reverend Isaiah Lei
+                        </h3>
+                        <div class="card-footer">
+                        <a href="https://www.facebook.com/isaiah.ilingo"><b>f</b></a>
+                        </div>
+                    </div>
+                    </div>
+                </div> 
+                <div class="col-sm-6 col-md-6 col-lg-3 card-space2">
+                    <div class="card">
+                    <div class="card-block">
+                        <img src="/images/mum-big.png" class="card-img-top">
+                        <h3 class="card-title">
+                        Pastor Anne Lei
+                        </h3>
+                        <div class="card-footer">
+                        <a href="https://www.facebook.com/annewangari.wangari.9"><b>f</b></a>
+                        </div>
+                    </div>
+                    </div> 
+                </div>
+                </div>
+            </div>
+
+            <br><br>
+
+            <!--
+            Daily Bible verse card -->
+            <div class="container-fluid">
+                <div class="card text-center">
+                    <div class="card-header">
+                    <b>Bible verse of the Day</b>
+                    </div>
+                    <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <br>
+                        <iframe framespacing="0" frameborder="no" width="60%" height="100px" src="https://www.biblegateway.com/votd/get?format=html&version=KJV">ViewVerse of the Day</iframe>
+                    </blockquote>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <!--
+            Program line-up -->
+            <table id="table-program" class="table table-hover text-center table-borderless">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Events Program Line-up</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Sunday</td>
+                    <td>9 a.m to 10:00 a.m - Intercessory Prayers</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>10:00 a.m to 11:00 a.m - Praise and Worship</td>
+                  </tr>
+                  <tr>
+                    <td>Wednesday</td>
+                    <td>Intercessory prayers</td>
+                  </tr>
+                </tbody>
+              </table>
+            <br><br>
+            <!--
+            Testimonials  -->
+            <div class="container-fluid">
+                <div class="card text-center">
+                <div class="card-header">
+                    <b>Testimonials</b>
+                </div>
+                <div class="card-body">
+                    <div class="container-fluid testimonials">
+                    <div id="carouselContent" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+            
+                            <!--
+                            Testimonial segment for a believer of Jesus Christ. -->
+                            <div class="carousel-item active text-center p-4">
+                                <!--
+                                Image avatar for someone giving a testimonial.  -->
+                                <img src="/images/me.jpg" style="width: 50px; height: 50px; border-radius: 50%;">
+                                <p><i>"I thank God for the precious gift of salvation. He has been so faithful to my family and I."</i></p>
+                                <p><b>~Kaniu
+            
+                                <br>
+                                
+                                <!--
+                                Facebook handle for someone giving a testimonial. -->
+                                <button>
+                                <a href="https://web.facebook.com/Halleluyeahhh/"><b>f</b></a>
+                                </button>
+            
+                                <!--
+                                Add a twitter follow button through the twitter developers platform (https://publish.twitter.com/#)  -->
+                                <a href="https://twitter.com/KaniuDaniel?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @KaniuDaniel</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                                </b></p>
+                            </div>
+            
+                            <!--
+                            Testimonial segment for a believer of Jesus Christ.  -->
+                            <div class="carousel-item text-center p-4">
+                                <!--
+                                Image avatar for someone giving a testimonial.  -->
+                                <img src="/images/ness.jpg" style="width: 50px; height: 50px; border-radius: 50%;">
+                                <p><i>"I thank God for the precious gift of salvation."</i></p>
+                                <p><b>~Ness
+            
+                                    <br>
+                                    
+                                    <!--
+                                    Facebook handle for someone giving a testimonial.  -->
+                                    <button>
+                                    <a href="https://web.facebook.com/aggie.qui.1"><b>f</b></a>
+                                    </button>
+            
+                                    <!--
+                                    Add a twitter follow button through the twitter developers platform (https://publish.twitter.com/#)  -->
+                                    <a href="https://twitter.com/nessie_qui?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @nessie_qui</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                                </b></p>
+                            </div>
+                        </div>
+            
+                        <!--
+                        Control buttons for the testimonials.  -->
+                        <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
