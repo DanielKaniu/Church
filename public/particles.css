@@ -16,12 +16,15 @@ body {
   left: 20vh;
 }
 #Bible-card {
-  background-image: url("images/yeah.jpg");
+  background-image: url("images/Bible-card.jpg");
   background-attachment: fixed;
 }
 #table-program {
   font-weight: bolder;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+#testimonials {
+  background-image: url("images/testimonies.jpg");
 }
 
 @keyframes gradient {
