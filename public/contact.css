@@ -19,12 +19,13 @@ body {
   background: transparent;
   transition: all 0.5s ease-in-out;
 }
-ul li a {
+ul li a #fb,
+#ig,
+#yt {
   color: brown;
-  display: inline;
   font-size: x-large;
 }
-ul li a .fa-facebook {
+ul li a #fb {
   color: rgb(47, 0, 255);
 }
 ul li a:hover {
