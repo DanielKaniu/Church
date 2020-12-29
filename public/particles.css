@@ -29,23 +29,36 @@ body {
 }
 
 .jumbotron {
-  background-color: darkslategray;
+  background-color: purple;
+  color: lightgreen;
+  text-align: center;
+  font-weight: bolder;
 }
 ul li a #whatsapp {
   color: chocolate;
   font-size: xx-large;
-}
-ul li a #fb,
-#ig,
-#yt {
-  color: brown;
-  font-size: xx-large;
+  float: left;
 }
 ul li a #fb {
-  color: rgb(47, 0, 255);
+  color: cornflowerblue;
+  font-size: xx-large;
+  float: left;
 }
-ul li a:hover {
+ul li a #ig {
+  color: orange;
+  font-size: xx-large;
+  float: left;
+}
+ul li a #yt {
   color: red;
+  font-size: xx-large;
+  float: left;
+}
+ul li a #whatsapp,
+#fb,
+#ig,
+#yt {
+  letter-spacing: 20px;
 }
 
 @keyframes gradient {
