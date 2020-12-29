@@ -28,6 +28,26 @@ body {
   background-attachment: fixed;
 }
 
+.jumbotron {
+  background-color: darkslategray;
+}
+ul li a #whatsapp {
+  color: chocolate;
+  font-size: xx-large;
+}
+ul li a #fb,
+#ig,
+#yt {
+  color: brown;
+  font-size: xx-large;
+}
+ul li a #fb {
+  color: rgb(47, 0, 255);
+}
+ul li a:hover {
+  color: red;
+}
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
