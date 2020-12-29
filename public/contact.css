@@ -4,6 +4,10 @@ body {
 .container {
   background-color: #696868;
 }
+.heading {
+  border-bottom: 2px dotted indianred;
+  text-align: center;
+}
 .btn-info {
   width: 50%;
   background: transparent;
