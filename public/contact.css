@@ -1,8 +1,14 @@
-body {
-  background-color: aquamarine;
+html {
+  height: 100%;
 }
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 100%;
+  animation: gradient 15s ease infinite;
+}
+
 .container {
-  background-color: #696868;
+  background-color: #d8b7b7;
 }
 .heading {
   border-bottom: 2px dotted indianred;
@@ -14,9 +20,25 @@ body {
   transition: all 0.5s ease-in-out;
 }
 ul li a {
-  color: orange;
+  color: brown;
   display: inline;
+  font-size: x-large;
+}
+ul li a .fa-facebook {
+  color: rgb(47, 0, 255);
 }
 ul li a:hover {
   color: red;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
