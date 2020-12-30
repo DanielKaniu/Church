@@ -1,11 +1,19 @@
 .jumbo {
   background-color: cadetblue;
-  width: 100vh;
+  height: 30vh;
+  text-align: center;
+  padding-top: 10vh;
+  color: azure;
+  font-size: 30px;
+}
+
+.praying-emoji {
+  font-size: xx-large;
 }
 
 @media only screen and (max-width: 576px) {
   .jumbotron {
-    height: 30vh;
+    height: 200vh;
   }
 }
 @media only screen and (min-width: 1000px) {
