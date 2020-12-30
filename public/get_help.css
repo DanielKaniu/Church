@@ -11,6 +11,12 @@
   font-size: xx-large;
 }
 
+.prayer {
+  color: blueviolet;
+  font-size: 25px;
+  font-family: monospace;
+}
+
 @media only screen and (max-width: 576px) {
   .jumbotron {
     height: 200vh;
