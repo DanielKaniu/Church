@@ -3,6 +3,60 @@ body {
   background-size: 400% 100%;
   animation: gradient 15s ease infinite;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/*
+    Style the navbar to be on top of the background video*/
+.navbar {
+  z-index: 1;
+}
+
+/*
+    Style the container housing the background video and the text*/
+.banner {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*
+    Style the video*/
+.banner video {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.banner .content {
+  position: relative;
+  z-index: 1;
+  margin-top: 0;
+  margin-left: 0;
+}
+/*
+    Style the heading which is over the background video*/
+.banner .content h1 {
+  margin: 0%;
+  padding: 0%;
+  font-size: 4.5em;
+  text-transform: uppercase;
+  color: white;
+}
+/*
+    Style the heading which is over the background video*/
+.banner .content p {
+  font-size: 1.5em;
+  color: white;
+}
+
 .brand {
   text-align: center;
   font-size: xx-large;
@@ -71,7 +125,7 @@ ul li a #whatsapp,
 }
 
 /*
-Test for church */
+  Test for church */
 #m,
 #e,
 #s,
@@ -164,14 +218,14 @@ Test for church */
   animation: n2 60s infinite;
 }
 /*
-Styling the letters in the spans using their ids.
-Apply animation to the spans and measure the duration it lasts.
-*/
+  Styling the letters in the spans using their ids.
+  Apply animation to the spans and measure the duration it lasts.
+  */
 
 /* 
-Give a shifting color change to the styled letters in linear order.
-Specify percentages of the animation's duration, i.e., 12.5% * 3 seconds.
-*/
+  Give a shifting color change to the styled letters in linear order.
+  Specify percentages of the animation's duration, i.e., 12.5% * 3 seconds.
+  */
 
 @keyframes m {
   0% {
