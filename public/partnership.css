@@ -9,3 +9,8 @@
 .praying-emoji {
   font-size: xx-large;
 }
+.topic {
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bolder;
+}
