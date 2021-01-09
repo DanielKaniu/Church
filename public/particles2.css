@@ -95,7 +95,8 @@ ul li a #whatsapp,
 #fb,
 #ig,
 #yt {
-  padding: auto;
+  padding-top: 5%;
+  padding-left: 20%;
   letter-spacing: 20px;
 }
 
