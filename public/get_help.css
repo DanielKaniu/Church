@@ -13,24 +13,29 @@ body {
 }
 
 .praying-emoji {
-  font-size: xx-large;
+  font-size: 60px;
 }
-
+.contact {
+  color: antiquewhite;
+}
 .prayer {
-  color: blueviolet;
-  font-size: 25px;
+  color: azure;
+  font-size: 40px;
+  font-weight: bolder;
   font-family: monospace;
   text-align: center;
 }
 
 .prayer-info {
   font-family: monospace;
-  font-size: 20px;
+  font-size: 40px;
 }
-
 @media only screen and (max-width: 576px) {
   .jumbotron {
     height: 200vh;
+  }
+  .prayer-info {
+    font-size: xx-large;
   }
 }
 @media only screen and (min-width: 1000px) {
