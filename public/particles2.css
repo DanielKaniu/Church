@@ -50,6 +50,8 @@ body {
   text-transform: uppercase;
   color: white;
 }
+/*
+Selector the daily Bible verse card */
 #Bible-card {
   background-image: url("images/Bible-card.jpg");
   background-attachment: fixed;
@@ -63,12 +65,11 @@ body {
   background-attachment: fixed;
 }
 
-.jumbotron {
+.jumbo {
   background-color: purple;
   color: lightgreen;
   text-align: center;
   font-weight: bolder;
-  height: 30%;
 }
 ul li a #whatsapp {
   color: chocolate;
@@ -94,6 +95,7 @@ ul li a #whatsapp,
 #fb,
 #ig,
 #yt {
+  padding: auto;
   letter-spacing: 20px;
 }
 
