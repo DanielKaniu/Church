@@ -19,13 +19,11 @@ body {
   background: transparent;
   transition: all 0.5s ease-in-out;
 }
-.jumbotron {
+.jumbot {
   background-color: purple;
   color: lightgreen;
   text-align: center;
   font-weight: bolder;
-  position: relative;
-  clear: both;
 }
 ul li a #whatsapp {
   color: chocolate;
@@ -47,7 +45,12 @@ ul li a #yt {
   font-size: xx-large;
   float: left;
 }
-.list {
+ul li a #whatsapp,
+#fb,
+#ig,
+#yt {
+  padding-top: 5%;
+  padding-left: 10%;
   letter-spacing: 20px;
 }
 
