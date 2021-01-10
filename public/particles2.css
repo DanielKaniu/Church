@@ -51,6 +51,14 @@ body {
   color: white;
 }
 /*
+Carousel */
+.carousel-inner {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 3%;
+}
+/*
 Selector the daily Bible verse card */
 #Bible-card {
   background-image: url("images/Bible-card.jpg");
