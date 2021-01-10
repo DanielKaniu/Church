@@ -50,13 +50,17 @@ body {
   text-transform: uppercase;
   color: white;
 }
+.baptism {
+  color: bisque;
+  font-size: x-large;
+  text-align: center;
+}
 /*
 Carousel */
-.carousel-inner {
-  display: block;
+#carousel {
   margin-left: auto;
   margin-right: auto;
-  border-radius: 3%;
+  border-radius: 1%;
 }
 /*
 Selector the daily Bible verse card */
