@@ -22,9 +22,46 @@ body {
 }
 .center-paragraph {
   text-align: center;
-  font-size: larger;
+  font-size: xx-large;
   font-weight: 500;
   word-spacing: 15px;
+}
+.contact {
+  color: aquamarine;
+}
+.jumbot {
+  background-color: purple;
+  color: lightgreen;
+  text-align: center;
+  font-weight: bolder;
+}
+ul li a #whatsapp {
+  color: chocolate;
+  font-size: xx-large;
+  float: left;
+}
+ul li a #fb {
+  color: cornflowerblue;
+  font-size: xx-large;
+  float: left;
+}
+ul li a #ig {
+  color: orange;
+  font-size: xx-large;
+  float: left;
+}
+ul li a #yt {
+  color: red;
+  font-size: xx-large;
+  float: left;
+}
+ul li a #whatsapp,
+#fb,
+#ig,
+#yt {
+  padding-top: 5%;
+  padding-left: 10%;
+  letter-spacing: 20px;
 }
 @keyframes gradient {
   0% {
