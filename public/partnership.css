@@ -11,8 +11,11 @@ body {
   color: azure;
   font-size: 30px;
 }
-.praying-emoji {
+.ribbon-emoji {
   font-size: xx-large;
+}
+.topic1 {
+  animation: heart 1.5s infinite ease-in;
 }
 .topic {
   padding-top: 5vh;
@@ -72,5 +75,13 @@ ul li a #whatsapp,
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+@keyframes heart {
+  0% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1.2);
   }
 }
