@@ -20,6 +20,9 @@ body {
   background: transparent;
   transition: all 0.5s ease-in-out;
 }
+.contact {
+  color: midnightblue;
+}
 .jumbot {
   background-color: purple;
   color: lightgreen;
