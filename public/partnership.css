@@ -7,7 +7,7 @@ body {
   animation: gradient 15s ease infinite;
 }
 .jumbo {
-  background-color: cadetblue;
+  background-color: #23a6d5;
   height: 30vh;
   text-align: center;
   padding-top: 10vh;
@@ -85,6 +85,6 @@ ul li a #whatsapp,
     transform: scale(0.7);
   }
   100% {
-    transform: scale(1.2);
+    transform: scale(1.3);
   }
 }
