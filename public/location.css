@@ -16,22 +16,22 @@ html {
 }
 ul li a #whatsapp {
   color: chocolate;
-  font-size: xx-large;
+  font-size: 60px;
   float: left;
 }
 ul li a #fb {
   color: cornflowerblue;
-  font-size: xx-large;
+  font-size: 60px;
   float: left;
 }
 ul li a #ig {
   color: orange;
-  font-size: xx-large;
+  font-size: 60px;
   float: left;
 }
 ul li a #yt {
   color: red;
-  font-size: xx-large;
+  font-size: 60px;
   float: left;
 }
 ul li a #whatsapp,
